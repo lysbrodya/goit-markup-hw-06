@@ -848,23 +848,21 @@ img {
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
 }
 
-.modal-btn:hover {
+.modal-btn:hover, .modal-btn:focus {
     fill: var(--accent-text-color);
 }
 
 .modal-icon {
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
     width: 18px;
     height: 18px;
     background-size: contain;
     display: flex;
     align-items: center;
     justify-content: center;
+    outline: none;
 }
 
 .modal-title {
@@ -929,6 +927,7 @@ img {
     resize: none;
     padding: 12px 16px;
     outline: none;
+    margin-bottom: 20px;
 }
 
 .modal-form-content:focus {
@@ -961,7 +960,7 @@ img {
     width: 16px;
     height: 15px;
     border-radius: 3px;
-    border: 2px solid #000000;
+    border: 0.2px solid #000000;
     background-origin: border-box;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
